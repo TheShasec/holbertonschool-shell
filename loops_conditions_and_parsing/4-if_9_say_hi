@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#
+COUNTER=1
+while [ $COUNTER -le 10 ] ; do
+	echo -e "Best School"
+	if [ $COUNTER -eq 9 ]; then
+		echo -e "Hi"
+	fi
+	COUNTER=$(($COUNTER + 1))
+done
+
