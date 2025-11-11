@@ -2,7 +2,7 @@
 #
 i=1
 for (( i ; i<=100 ; i++ )) ; do
-	if [ $(( i % 3 )) -eq 0 -a $(( i % 5 )) -eq 0 ] ; then
+	if [ $(( i % 3 )) -eq 0 ] && [ $(( i % 5 )) -eq 0 ] ; then
 		echo "FizzBuzz"
 	elif [ $(( i % 3 )) -eq 0 ] ; then 
 		echo "Fizz"
