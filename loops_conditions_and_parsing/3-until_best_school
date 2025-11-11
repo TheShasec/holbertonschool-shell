@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-COUNTER=1
+COUNTER=0
 until [ $COUNTER -eq 10 ] ; do
 	echo "Best School"
 	COUNTER=$((COUNTER+1))
