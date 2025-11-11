@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 #
 for i in *; do
-	echo "${i#*"-"}"
+	if [ $i -f ] ; then 
+		echo "${i#*"-"}"
+	fi
 done
