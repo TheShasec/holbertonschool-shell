@@ -6,6 +6,6 @@ while [ $COUNTER -le 10 ] ; do
 	if [ $COUNTER -eq 9 ]; then
 		echo -e "Hi"
 	fi
-	COUNTER=$(($COUNTER + 1))
+	COUNTER=$((COUNTER + 1))
 done
 
