@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 COUNTER=1
-while [ $COUNTER -le 10 ] ; do
+until [ $COUNTER -eq 10 ] ; do
 	echo "Best School"
 	COUNTER=$((COUNTER+1))
 done
