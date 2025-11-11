@@ -4,12 +4,5 @@
 
 LOG_FILE="apache-access.log"
 
-awk '{
-    key = $1 " " $9
-    count[key]++
-}
-END {
-    for (key in count) {
-        print count[key], key
-    }
-}' "$LOG_FILE" | sort -nr
+awk '{print $1, $9}' $LOG_FILE | sort | uniq -c | sort -rn | awk '{printf "%d %s %s\n", $1, $2, $3}'
+
