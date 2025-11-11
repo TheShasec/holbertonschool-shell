@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #
-f="/etc/passwd"
-d=cut -d  ":" -f 1-3 $f
-echo $d
+while read -r l ; do
+	echo $l | cut -d ":" -f 1-3  
+done < "/etc/passwd"
