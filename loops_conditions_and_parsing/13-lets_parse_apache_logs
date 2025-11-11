@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #
-a=awk -F "-" '{ print $1 }' apache-access.log
-b=awk -F '"' '{ print $3 }'| awk -F " " ' { print $1} ' apache-access.log file
+a=$(awk -F "-" '{ print $1 }' apache-access.log)
+b=$(awk -F '"' '{ print $3 }'| awk -F " " ' { print $1} ' apache-access.log)
 echo $a $b
