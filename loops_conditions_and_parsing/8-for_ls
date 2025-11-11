@@ -4,6 +4,6 @@ for i in *; do
 	if [[ $i == ?"-"* ]]; then
 		echo "${i:2}"
 	else 
-		echo $i
+		echo "$i"
 	fi
 done
