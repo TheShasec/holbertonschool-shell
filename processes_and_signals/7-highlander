@@ -1,5 +1,5 @@
-#!/usr/bin/env/bash
-#
+#!/usr/bin/env bash
+# jdkfjd
 trap 'echo "I am invincible!!!"' SIGTERM
 while [ 1 ] ; do 
 	echo "To infinity and beyond"
