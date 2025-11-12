@@ -1,2 +1,3 @@
-#!/usr/bini/env bash
+#!/usr/bin/env bash
+# explain
 echo $$
