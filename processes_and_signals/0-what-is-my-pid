@@ -1,0 +1,2 @@
+#!/usr/bini/env bash
+echo $$
